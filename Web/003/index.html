@@ -173,7 +173,7 @@
                 // 会有闪烁不得意这样做, (＞﹏＜)
                 canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
                 canvas.css("background", "#ffc0cb");
-                $await(Jscex.Async.sleep(300));
+                $await(Jscex.Async.sleep(150));
                 canvas.css("background", "none");
             }));
 
@@ -199,7 +199,7 @@
                 $("#clock-box").fadeIn(500);
                 while (true) {
                     timeElapse(together);
-                    $await(Jscex.Async.sleep(500));
+                    $await(Jscex.Async.sleep(300));
                 }
             }));
 
