@@ -189,7 +189,7 @@
 
             var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
-                together.setFullYear(2023, 04, 30);
+                together.setFullYear(2023, 5, 30);
                 together.setHours(0);
                 together.setMinutes(0);
                 together.setSeconds(0);
@@ -199,7 +199,7 @@
                 $("#clock-box").fadeIn(500);
                 while (true) {
                     timeElapse(together);
-                    $await(Jscex.Async.sleep(1000));
+                    $await(Jscex.Async.sleep(300));
                 }
             }));
 
